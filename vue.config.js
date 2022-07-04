@@ -1,0 +1,12 @@
+module.exports={
+  lintOnSave:false,
+  devServer:{
+    open:true,
+    proxy:{
+      '/api':{
+        target:"http://gmall-h5-api.atguigu.cn",
+        changOrigin:true
+      }
+    }
+  }
+}
